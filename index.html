@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>西安软件服务外包</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="heihei.js" >
+  </script>
+</head>
+<body>
+<header>
+	<div class="content">
+		<p>西安软件服务外包学院</p>
+		<div class="title">
+			<h1>统一建模语言理论测试</h1>
+		</div>
+		<div class="person" >
+		<div id='end'><span>考试科目</span><input type="text" value="统一建模语言UML" />
+			<span>时间</span><input type="text" value="100分钟" />
+			<span >得分</span><input type="text" value=""/ id= 'red'></div>
+			<div id="person"><span>班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 级</span><input type="text" value="" name="class"/>
+			<span>学号</span><input type="text"  name="stuid" value=""/>
+			<span>姓名</span><input type="text" name="name" value=""/></div>
+
+		</div>
+	</div>
+</header>
+<div class="container">
+	<div class="content">
+		<form id="textContent" >
+			<div class="sension" >
+				<h3>一、填空题</h3>
+				<div class="sensionBody" id="tiankong">
+					<ol>
+						<li id="fillBlankOne" >
+						<div>
+							<label>UML的中文全称是:</label>
+                            <input type="text" />。
+						</div>
+
+						</li>
+						<li id="fillBlankTwo">
+						<div>
+							<label>对象最突出的特征是:</label>
+                            <input type="text" />、
+                            <input type="text" />、
+                            <input type="text" />。
+						</div>
+
+						</li>
+					</ol>
+				</div>
+			</div>
+			<div class="sension">
+				<h3>二、选择题</h3>
+				<div class="sensionBody" id = 'radio'>
+					<ol>
+						<li><h5>UML与软件工程的关系是</h5>
+						<div> <label><input type="radio" name="Radios" value="1"/>(A)UML 就是软件工程</label></div>
+						<div><label><input id='pp' type="radio" name="Radios" value="2"/>(B)UML 参与到软件工程中软件开发过程的几个阶段</label></div>
+						<div><label><input type="radio" name="Radios" value="3"/>(C)UML 与软件工程无关</label></div>
+						<div> <label><input type="radio" name="Radios" value="4"/>(D)UML 是软件工程的一部分</label></div>
+						</li>
+						<li><h5>Java 语言支持</h5>
+						<div> <label><input type="radio" name="Radio1" value="1"/>(A)单继承</label></div>
+						<div><label><input id = 'mm'type="radio" name="Radio1" value="2"/>(B)多继承</label></div>
+						<div><label><input type="radio" name="Radio1" value="3"/>(C)单继承和多继承都支持</label></div>
+						<div> <label><input type="radio" name="Radio1" value="4"/>(D)单继承和多继承都不支持</label></div>
+						</li>
+						</ol>
+			    </div>
+			    </div>
+				<div class="sension">
+					<h3>三、多选题</h3>
+					<div class="sensionBody" id = 'duoxuan'>
+						<ol>
+							<li><h5>用例的粒度分为 以下哪三种。</h5>
+							<div><label><input type="checkbox" name="checkbox" value="1">(A)概述级</label></div>
+							<div><label><input type="checkbox" name="checkbox" value="2">(B)需求级</label></div>
+							<div><label><input type="checkbox" name="checkbox" value="3">(C)用户目标级</label></div>
+							<div><label><input type="checkbox" name="checkbox" value="4">(D)子功能级</label></div>
+							</li>
+							<li><h5>类图由 以下哪三部分组成。</h5>
+							<div><label><input type="checkbox" name="checkbox1" value="1">(A)名称(Name)</label></div>
+							<div><label><input type="checkbox" name="checkbox1" value="2">(B)属性(Attribute)</label></div>
+							<div><label><input type="checkbox" name="checkbox1" value="3">(C) 操作(Operation)</label></div>
+							<div><label><input type="checkbox" name="checkbox1" value="4">(D)方法(Function）</label></div>
+							</li>
+
+						</ol>
+					</div>
+				</div>
+				<div class="sension">
+					<h3>四、判断题</h3>
+					<div class="sensionBody" id = 'panduan'>
+						<ol>
+							<li><label>用例图只是用于和客户交流和沟通的，用于确定需求。<input type="text" value="" /></label></li>
+							<li><label> 在状态图中，终止状态在一个状态图中允许有任意多个。<input type="text" value="" /></label></li>
+						</ol>
+					</div>
+				</div>
+				<div class="sension">
+					<h3>五、简答题</h3>
+					<div class="sensionBody" >
+						<ol>
+							<li>
+								 <p>简述什么是模型以及模型的表现形式?</p>
+								 <textarea rows="8" cols="100" name='area' id = 'jianda'></textarea>
+							</li>
+						</ol>
+					</div>
+				</div>
+			<button type="button" id = "button" onclick = "pick()">提交</button>
+		</form>
+	</div>
+</div>
+<footer></footer>
+
+</body>
+</html>

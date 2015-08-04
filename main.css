@@ -1,0 +1,87 @@
+
+body,header,div,footer, h1, h2, h3, h4, h5, h6, hr, p, ul, ol, li,  form,button, input, textarea{ margin:0; padding:0; }
+/*common*/
+body{
+	width: 100%;
+	height: auto;
+	color: #000;
+	font-family: "microsoft yahei",Simsun,Tahoma;
+}
+input{
+	height:25px;
+	border:0;
+	border-bottom:1px solid #000;
+	outline:none;
+	text-align:center;
+}
+.content{
+	width: 90%;
+	margin:0 auto;
+	position: relative;
+	background:#fff;
+	border:1px solid #dfdfdf;
+}
+/*header*/
+header{
+	width: 100%;
+	height: 200px;
+}
+header p{
+	font-size: 15px;
+	border-bottom: 3px solid #000;
+}
+.title{
+	height:50px;
+	margin:10px auto;
+	padding:10px;
+	line-height:50px;
+	font-size:30px;
+	text-align:center;
+	background:#404040;
+}
+.person{
+	padding:10px;
+}
+.person div{
+	width:800px;
+	margin:0 auto;
+}
+.person input{
+	margin-left:3px;
+}
+.person span{
+	margin-left:2px;
+}
+.container{
+	width: 100%;
+}
+#textContent{
+	padding:50px;
+}
+.sension{
+	margin:20px 0;
+	padding:10px 60px;
+	border-bottom:1px solid #dfdfdf;
+}
+.sensionBody{
+	padding:10px;
+	font-size: 18px;
+}
+.sensionBody li{
+   margin-bottom:10px;
+}
+.sensionBody textarea{
+	margin-top:10px;
+}
+button{
+	position: absolute;
+	right: 80px;
+	width:70px;
+	height:30px;
+	cursor:pointer;
+}
+#red{
+  color:red;
+
+
+}
