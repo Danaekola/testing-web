@@ -1,13 +1,33 @@
-function SimpleSolve(score){
+function SimpleSolve(score,answers){
   this.score = score;
+  this.answers = answers;
 }
 
-SimpleSolve.prototype._simpleSolve = function(){
-  var strr = '模型';
+SimpleSolve.prototype.getSimpleSolve = function(){
+
+  var results = this.getSimpleSolveAnswers();
+
   var aa = document.getElementById('jianda');
 
-  if(aa.value  == strr){
-    this.score += 20;
+  for(var i = 0;i < results.length; i++){
+    var temp = document.getElementById('f'+i);
+    if(temp.value == results[i].answer[0]){
+      this.score._getScore(results[i].unitScore);
+    }
   }
-  return this.score;
+};
+
+
+
+SimpleSolve.prototype.getSimpleSolveAnswers = function(){
+     var answers = this.answers;
+     var results = [];
+     for(var x=0; x < answers.length;x++){
+
+       if(answers[x].type == "simpleSolve"){
+         results.push(answers[x]);
+       }
+     }
+     return results;
+
 };
