@@ -8,7 +8,7 @@ FillBlank.prototype.getFillBlankScore = function(){
   var inputs = $('#fillBlank').find('input');
   var results = this.getFillBlankAnswers();
 
-  console.log(results);
+  
   if(inputs[0].value == results[0].answer[0]){
      this.score._getScore(results[0].unitScore);
   }

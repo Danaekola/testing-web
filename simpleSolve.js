@@ -9,10 +9,9 @@ SimpleSolve.prototype.getSimpleSolve = function(){
 
   for(var i = 0;i < results.length; i++){
 
-    var temp = document.getElementById('f'+i);
-
-    // var temp = $("#('f'+i)");
-    if(temp.value == results[i].answer[0]){
+    // var temp = document.getElementById('f'+i);
+    var temp = $("#f"+i);
+    if(temp.val() == results[i].answer[0]){
       this.score._getScore(results[i].unitScore);
     }
   }

@@ -9,7 +9,7 @@ Judge.prototype.getJudgeScore = function(){
   var results = this.getJudgeAnswers();
 
   for(var i = 0;i < results.length; i++){
-  
+
     var temp = $("#judge").find("input[name = e"+i+"]");
 
 
@@ -19,7 +19,7 @@ Judge.prototype.getJudgeScore = function(){
         this.score._getScore(results[i].unitScore);
 
       }
-      console.log(temp[1].value);
+      
     }
   }
 
