@@ -7,10 +7,11 @@ SimpleSolve.prototype.getSimpleSolve = function(){
 
   var results = this.getSimpleSolveAnswers();
 
-  var aa = document.getElementById('jianda');
-
   for(var i = 0;i < results.length; i++){
+
     var temp = document.getElementById('f'+i);
+
+    // var temp = $("#('f'+i)");
     if(temp.value == results[i].answer[0]){
       this.score._getScore(results[i].unitScore);
     }

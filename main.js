@@ -17,17 +17,17 @@ function pick(){
 
   var multipleChoice = new MultipleChoice(score,answers);
   multipleChoice.getMultipleChoiceScore();
-
+  console.log("hehhe");
   var judge = new Judge(score,answers);
   judge.getJudgeScore();
-
+  console.log("haaaaa");
   var simple = new SimpleSolve(score,answers);
   simple.getSimpleSolve();
 
-  var ending = document.getElementById('person');
-  var gg = ending.getElementsByTagName('input');
 
-  gg[2].value =''+score.score;
+
+  var inputs = $('#person').find('input');
+  inputs[2].value =''+score.score;
 
 
 

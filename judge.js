@@ -9,11 +9,17 @@ Judge.prototype.getJudgeScore = function(){
   var results = this.getJudgeAnswers();
 
   for(var i = 0;i < results.length; i++){
-    var temp = document.getElementsByName('e'+i);
+  
+    var temp = $("#judge").find("input[name = e"+i+"]");
+
+
     for(var y = 0; y < temp.length; y++){
       if(temp[y].checked && temp[y].value == results[i].answer[0]){
+
         this.score._getScore(results[i].unitScore);
+
       }
+      console.log(temp[1].value);
     }
   }
 

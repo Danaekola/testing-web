@@ -8,8 +8,9 @@ MultipleChoice.prototype.getMultipleChoiceScore = function(){
   var results = this.getMultipleChoiceAnswers();
   var anString;
   for(var i = 0;i < results.length; i++){
-    var temp = document.getElementsByName('d'+i);
-     anString='';
+    var temp = $("#multipleChoice").find("input[name = d"+i+"]");
+    // var temp = $('d'+i);
+    anString='';
     for(var y = 0; y < temp.length; y++){
       if(temp[y].checked){
 
