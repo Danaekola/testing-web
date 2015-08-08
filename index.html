@@ -4,42 +4,56 @@
       <title>Test</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
-      <script language="javascript" type="text/javascript" src="jquery-2.1.4.js"></script>
-      <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
-      <link href="style.css" rel="stylesheet" type="text/css" />
+      <script language="javascript" type="text/javascript" src="./js/lib/jquery-2.1.4.js"></script>
+      <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <script type="text/javascript" src="./js/main.js" ></script>
 
-      <script type="text/javascript" src="main.js" ></script>
-      <script language="javascript" type="text/javascript" src="jquery-2.1.4.js"></script>
-      <script type="text/javascript" src="singleChoice.js" ></script>
-      <script type="text/javascript" src="multipleChoice.js" ></script>
-      <script type="text/javascript" src="emptyInfo.js" ></script>
-      <script type="text/javascript" src="judge.js" ></script>
-      <script type="text/javascript" src="simpleSolve.js" ></script>
-      <script type="text/javascript" src="fillBlank.js" ></script>
-      <script type="text/javascript" src="topic.js" ></script>
-      <script type="text/javascript" src="score.js" ></script>
-      <script type="text/javascript" src="allAnswers.js" ></script>
+      <script type="text/javascript" src="./js/model/singleChoice.js" ></script>
+      <script type="text/javascript" src="./js/model/multipleChoice.js" ></script>
+      <script type="text/javascript" src="./js/lib/emptyInfo.js" ></script>
+      <script type="text/javascript" src="./js/model/judge.js" ></script>
+      <script type="text/javascript" src="./js/model/simpleSolve.js" ></script>
+      <script type="text/javascript" src="./js/model/fillBlank.js" ></script>
+      <script type="text/javascript" src="./js/lib/topic.js" ></script>
+      <script type="text/javascript" src="./js/lib/score.js" ></script>
+      <script type="text/javascript" src="./js/lib/allAnswers.js" ></script>
   </head>
 
-  <body class="container">
-    <div class="center-block" >
+  <body class="container-fluid">
+    <div class="row">
+      <div class=" col-md-8 col-md-offset-2 ">
+        <div class="panel panel-default">
+          <div class="panel-body">
 
-        <header>
-          <hr/>
-          <h1 class="text-center">统一建模语言理论测试</h1>
-          <form id = "person" class="form-inline" >
-            <form-group><lable>考试科目:&nbsp;&nbsp;</lable><input type="text" class="form-control form-self" name="subject" value="统 一 建 模 语 言 UML" disabled></form-group>
-            <form-group><lable>&nbsp;&nbsp;时间:&nbsp;&nbsp;</lable><input type="text" class="form-control form-self"name="time" value="100 分钟" disabled></form-group>
-            <form-group><lable >&nbsp;&nbsp;得分:&nbsp;&nbsp;</lable><input id="score" type="text" class="form-control form-self"name="score" value=""></form-group><br>
-            <form-group><lable>班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级:&nbsp;&nbsp;</lable> <input type="text" class="form-control form-self" name="class" value=""></form-group>
-            <form-group><lable>&nbsp;&nbsp;学号:&nbsp;&nbsp;</lable><input type="text" class="form-control form-self" name="stuid" value=""></form-group>
-            <form-group><lable>&nbsp;&nbsp;姓名:&nbsp;&nbsp;</lable><input type="text" class="form-control form-self" name="name" value=""></form-group>
-          </form>
-        </header>
-        <form  class="form-inline" >
+
+
+      <header>
+        <hr/>
+        <h1 class="text-center">统一建模语言理论测试</h1>
+        <form id = "person" class="form-inline" >
+          <form-group><lable>考试科目:&nbsp;&nbsp;</lable><input type="text" class="form-control form-self" name="subject" value="统 一 建 模 语 言 UML" disabled></form-group>
+          <form-group><lable>&nbsp;&nbsp;时间:&nbsp;&nbsp;</lable><input type="text" class="form-control form-self"name="time" value="100 分钟" disabled></form-group>
+          <form-group><lable >&nbsp;&nbsp;得分:&nbsp;&nbsp;</lable><input id="score" type="text" class="form-control form-self"name="score" value=""></form-group><br>
+          <form-group><lable>班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级:&nbsp;&nbsp;</lable> <input type="text" class="form-control form-self" name="class" value=""></form-group>
+          <form-group><lable>&nbsp;&nbsp;学号:&nbsp;&nbsp;</lable><input type="text" class="form-control form-self" name="stuid" value=""></form-group>
+          <form-group><lable>&nbsp;&nbsp;姓名:&nbsp;&nbsp;</lable><input type="text" class="form-control form-self" name="name" value=""></form-group>
+        </form>
+      </header>
+      </div>
+    </div>
+      </div>
+    </div>
+
+       <div class="row">
+
+      <form  class="form-inline" >
+
+      <div class="col-md-8 col-md-offset-2 ">
+
+        <div class="panel panel-default">
+          <div class="panel-body">
           <section id = 'fillBlank'>
-
-          <h4>  一 、填空题</h4>
+           <h4>  一 、填空题</h4>
             <div id = "fill"  >
               <form-group><lable>1.UML的中文全称是:&nbsp;&nbsp;</lable><input type="text" class="form-control" value="" ></form-group><br>
               <form-group><lable>2.对象最突出的特征是:&nbsp;&nbsp;</lable><input type="text" class="form-control" value=""></form-group>
@@ -47,59 +61,130 @@
               <form-group><lable>,</lable> <input type="text" class="form-control"  value=""></form-group>
             </div>
           </section>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-8 col-md-offset-2 ">
+        <div class="panel panel-default">
+          <div class="panel-body">
           <section >
             <h4>
               二 、选择题
             </h4>
-            <ol id ='singleChoice'>
-              <li>UML 与软件工程的关系是:<br/>
-                <input type="radio" name="c0" value="A">(A)UML 就是软件工程<br/>
-                <input type="radio" name="c0" value="B">(B)UML 参与到软件工程中软件开发过程的几个阶段<br/>
-                <input type="radio" name="c0" value="C">(C)UML 与软件工程无关<br/>
-                <input type="radio" name="c0" value="D">(D)UML 是软件工程的一部分
+            <ol id ='singleChoice' class="list-unstyled">
+              <li>1.UML 与软件工程的关系是:<br/>
+                <li>
+                <input id="r1" type="radio" name="c0" value="A"><label for="r1">(A)UML 就是软件工程</label>
+                </li>
+                <li>
+                <input id="r2" type="radio" name="c0" value="B"><label for="r2">(B)UML 参与到软件工程中软件开发过程的几个阶段</lable>
+                </li>
+                <li>
+                <input id="r3" type="radio" name="c0" value="C"><label for="r3">(C)UML 与软件工程无关</label>
+                </li>
+                <li>
+                <input id="r4" type="radio" name="c0" value="D"><label for="r4">(D)UML 是软件工程的一部分</label>
+                </li>
               </li>
               <li>2.Java 语言支持:<br/>
-                <input type="radio" name="c1" value="A">(A)单继承<br/>
-                <input type="radio" name="c1" value="B">(B)多继承<br/>
-                <input type="radio" name="c1" value="C">(C)单继承和多继承都支持<br/>
-                <input type="radio" name="c1" value="D">(D)单继承和多继承都不支持
+                <li>
+                <input id="w1" type="radio" name="c1" value="A"><label for="w1">(A)单继承</label>
+                </li>
+                <li>
+                <input id="w2" type="radio" name="c1" value="B"><label for="w2">(B)多继承</lable>
+                </li>
+                <li>
+                <input id="w3" type="radio" name="c1" value="C"><label for="w3">(C)单继承和多继承都支持</label>
+                </li>
+                <li>
+                <input id="w4" type="radio" name="c1" value="D"><label for="w4">(D)单继承和多继承都不支持</label>
+                </li>
               </li>
+
             </ol>
           </section>
+        </div>
+      </div>
+
+      </div>
+      <div class="col-md-8 col-md-offset-2 ">
+        <div class="panel panel-default">
+          <div class="panel-body">
           <section>
             <h4>
               三 、多选题
             </h4>
-            <ol id ='multipleChoice'>
-              <li>用例的粒度分为以下哪三种。<br/>
-                <input type="checkbox" name="d0" value="A">(A)概述级、<br/>
-                <input type="checkbox" name="d0" value="B">(B)需求级<br/>
-                <input type="checkbox" name="d0" value="C">(C)用户目标级<br/>
-                <input type="checkbox" name="d0" value="D">(D)子功能级
+
+
+
+            <ol id ='multipleChoice'  class="list-unstyled">
+              <li>1.用例的粒度分为以下哪三种。<br/>
+                <li>
+                <input id="q1" type="checkbox" name="d0" value="A"><label for="q1">(A)概述级、</label>
+                </li>
+                <li>
+                <input id="q2" type="checkbox" name="d0" value="B"><label for="q2">(B)需求级</lable>
+                </li>
+                <li>
+                <input id="q3" type="checkbox" name="d0" value="C"><label for="q3">(C)用户目标级</label>
+                </li>
+                <li>
+                <input id="q4" type="checkbox" name="d0" value="D"><label for="q4">(D)子功能级</label>
+                </li>
               </li>
-              <li>类图由以下哪三部分组成。<br/>
-              <input type="checkbox" name="d1" value="A">(A)名称(Name)<br/>
-              <input type="checkbox" name="d1" value="B">(B)属性(Attribute)<br/>
-              <input type="checkbox" name="d1" value="C">(C)操作(Operation)<br/>
-              <input type="checkbox" name="d1" value="D">(D)方法(Function)
+              <li>2.类图由以下哪三部分组成。<br/>
+                <li>
+                <input id="s1" type="checkbox" name="d1" value="A"><label for="s1">(A)名称(Name)</label>
+                </li>
+                <li>
+                <input id="s2" type="checkbox" name="d1" value="B"><label for="s2">(B)属性(Attribute)</lable>
+                </li>
+                <li>
+                <input id="s3" type="checkbox" name="d1" value="C"><label for="s3">(C)操作(Operation)</label>
+                </li>
+                <li>
+                <input id="s4" type="checkbox" name="d1" value="D"><label for="s4">(D)方法(Function)</label>
+                </li>
               </li>
+
             </ol>
+
           </section>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-8 col-md-offset-2 ">
+        <div class="panel panel-default">
+          <div class="panel-body">
           <section>
             <h4>
               四 、判断题
             </h4>
             <ol id = 'judge'>
               <li>用例图只是用于和客户交流和沟通的,用于确定需求。
-                <input type="radio" name="e0" value="TURE">TURE
-                <input type="radio" name="e0" value="FALSE">FALSE
+                <input type="radio" name="e0" value="TURE">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <input type="radio" name="e0" value="FALSE">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
               </li>
               <li>在状态图中,终止状态在一个状态图中允许有任意多个。
-                <input type="radio" name="e1" value="TURE">TURE
-                <input type="radio" name="e1" value="FALSE">FALSE
+                <input type="radio" name="e1" value="TURE">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <input type="radio" name="e1" value="FALSE">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
               </li>
             </ol>
           </section>
+        </div>
+      </div>
+
+      </div>
+      <div class="col-md-8 col-md-offset-2 ">
+        <div class="panel panel-default">
+          <div class="panel-body">
           <section>
             <h4>
               五 、简 答 题
@@ -110,11 +195,13 @@
               </li>
             </ol>
           </section>
-          <input  id = 'total' type="button"  value="commit"  class="btn btn-primary btn-lg"onclick="pick()">
-        </form>
-
-
-
+        </div>
+      </div>
+    </div >
+    <div class="col-md-2 col-md-offset-9">
+    <input  id = 'total' type="button"  value="commit"  class="btn btn-primary btn-lg"onclick="pick()">
+  </div>
+    </form>
       </div>
 
     </body>
